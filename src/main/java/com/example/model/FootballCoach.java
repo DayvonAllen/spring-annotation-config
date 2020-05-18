@@ -3,9 +3,11 @@ package com.example.model;
 import com.example.service.FortuneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class FootballCoach implements Coach {
 
     private FortuneService fortuneService;
