@@ -18,5 +18,7 @@ public class SpringDriver {
         System.out.println("----------------------------------------------------");
         System.out.println(bCoach.getDailyWorkout());
         System.out.println(bCoach.getDailyFortune());
+
+        context.close();
     }
 }
